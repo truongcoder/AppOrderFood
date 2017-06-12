@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="@string/themloaimonan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputTenThucDon"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtThemLoaiThucDon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/themloaimonan"
+            android:padding="@dimen/size10"
+            android:textColor="#000" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:background="@drawable/bogoc_button"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnthemLoaiTD"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="@string/dongy" />
+</LinearLayout>

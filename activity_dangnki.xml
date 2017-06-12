@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.pctruong.apporderfood.Activity.DangKiActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_margin="@dimen/size10"
+        android:text="@string/dangki"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lnlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/lnlayout"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtTenDN"
+            android:drawablePadding="@dimen/size10"
+            android:drawableLeft="@drawable/user"
+            android:padding="@dimen/size10"
+            android:textColorHint="@color/colorgray"
+            android:textColor="@color/colorblack"
+            android:hint="@string/tendangnhap"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/size10"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtMatKhauDN"
+            android:textColor="@color/colorblack"
+            android:drawablePadding="@dimen/size10"
+            android:drawableLeft="@drawable/pass"
+            android:layout_margin="@dimen/size10"
+            android:padding="@dimen/size10"
+            android:textColorHint="@color/colorgray"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:hint="@string/matkhau"
+            android:password="true"
+            android:layout_height="wrap_content" />
+         <RadioGroup
+             android:id="@+id/rgGT"
+             android:layout_marginLeft="@dimen/size10"
+             android:background="@color/colorwhite"
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             <RadioButton
+                 android:id="@+id/radiNam"
+                 android:padding="@dimen/size10"
+                 android:text="Nam"
+                 android:checked="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <RadioButton
+                 android:id="@+id/radiNu"
+                 android:padding="@dimen/size10"
+                 android:text="Nữ"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+         </RadioGroup>
+        <Spinner
+            android:id="@+id/sp_NhanVien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:textColor="@color/colorblack"
+            android:hint="@string/ngaysinh"
+            android:layout_margin="@dimen/size10"
+            android:padding="@dimen/size10"
+            android:textColorHint="@color/colorgray"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtCMND"
+            android:textColor="@color/colorblack"
+            android:hint="@string/cmthu"
+            android:layout_margin="@dimen/size10"
+            android:padding="@dimen/size10"
+            android:numeric="integer"
+            android:maxLength="9"
+            android:textColorHint="@color/colorgray"
+            android:background="@color/colorwhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+         <LinearLayout
+
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <Button
+                 android:id="@+id/btnDongY"
+                 android:layout_weight="1"
+                 android:background="#13e1dd"
+                 android:text="@string/dongy"
+                 android:layout_width="0dp"
+                 android:padding="@dimen/size10"
+                 android:layout_margin="@dimen/size10"
+                 android:layout_height="wrap_content" />
+             <Button
+                 android:id="@+id/btnThoat"
+                 android:background="#cf420f"
+                 android:layout_weight="1"
+                 android:text="@string/thoat"
+                 android:layout_width="0dp"
+                 android:padding="@dimen/size10"
+                 android:layout_margin="@dimen/size10"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
